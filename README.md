@@ -1,6 +1,8 @@
 # Prender
 Pre-render links as the mouse cursor approaches them.
 
+[Check it out on JSFiddle](http://jsfiddle.net/discomfort/HVPdC/)
+
 ## Dependencies
  * [jQuery](http://jquery.com/)
  * [jQuery MouseMotion](https://github.com/discom4rt/jquery-mousemotion)
