@@ -61,7 +61,7 @@
         y1 = frame.y,
         x2 = Math.cos( frame.direction * 180/Math.PI ),
         y2 = Math.sin( frame.direction * 180/Math.PI ),
-        anchor = document.getFristElementOnPath( x1, y1, x2, y2, 'a' ),
+        anchor = document.getFirstElementOnPath( x1, y1, x2, y2, 'a' ),
         previousUrl = loaderFrame.getAttribute( 'src' ),
         newUrl;
 
