@@ -37,6 +37,7 @@
     function setup() {
       loaderFrame = document.createElement( 'iframe' );
       loaderFrame.setAttribute( 'id', LOADER_FRAME_ID );
+      loaderFrame.setAttribute( 'name', LOADER_FRAME_ID );
 
       // position the frame off the screen
       loaderFrame.style.position = 'absolute';
@@ -70,7 +71,21 @@
       }
 
       if( newUrl && newUrl.length && previousUrl !== newUrl ) {
+        stopLoading();
         loaderFrame.setAttribute( 'src', newUrl );
+      }
+    }
+
+    /**
+     * Stop the loader frame from loading.
+     **/
+    function stopLoading() {
+      if ( typeof window.frames[ LOADER_FRAME_ID ].stop === 'undefined' ) {
+        // IE
+        window.frames[ LOADER_FRAME_ID ].document.execCommand( 'Stop' );
+      } else {
+        // other browsers
+        window.frames[ LOADER_FRAME_ID ].stop();
       }
     }
 
