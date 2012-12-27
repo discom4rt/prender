@@ -1,5 +1,5 @@
 # Prender
-Pre-render links as the mouse cursor approaches them.
+Pre-render links as the mouse cursor approaches them.  The idea is to retrieve and cache at least some of the resources for the target page before the navigation event.  The concept of prefetching exists in the HTML 5 spec and Chrome supports the ```rel="prerender"``` attribute on anchor tags, which instructs the browser to render the target page in an invisible tab which is then swapped in upon navigation. In this case, a hidden iframe acts as the invisible tab, but there is no swapping functionality.
 
 [Check it out on JSFiddle](http://jsfiddle.net/discomfort/HVPdC/)
 
@@ -20,5 +20,6 @@ Pre-render links as the mouse cursor approaches them.
  * The MouseMotion library that Prender depends on is a little rough and may not pick up the direction of your mouse accurately.
 
 ## Future Considerations
+ * Implement swapping for same domain frames
  * Increase responsiveness of loading
- * Use a more than one frame to render some of the links that fall on the cursor line
+ * Use more than one frame to render some of the links that fall on the cursor path
