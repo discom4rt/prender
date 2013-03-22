@@ -16,7 +16,7 @@ Pre-render links as the mouse cursor approaches them.  The idea is to retrieve a
 	});
 
 ## Caveats
- * The X-Frame-Options header stops some sites from being loaded in iframes to prevent certain attacks.  Unfortunately, this cripples Prender's functionality pretty thoroughly. Why do things have to be so secure!?
+ * The X-Frame-Options header stops some sites from being loaded in iframes toz prevent certain attacks.  Unfortunately, this cripples Prender's functionality pretty thoroughly. Why do things have to be so secure!?
  * The MouseMotion library that Prender depends on is a little rough and may not pick up the direction of your mouse accurately.
 
 ## Future Considerations

@@ -9,7 +9,7 @@
  **/
 (function( window, document, $, undefined ) {
 
-  window.Prender = new function() {
+  var Prender = function() {
     var LOADER_FRAME_ID = 'prender-loader',
       documentElement = document.documentElement,
       loaderFrame;
@@ -86,5 +86,7 @@
       $( documentElement ).unbind( 'mousemove' );
     }
   };
+
+  window.Prender = new Prender();
 
 })( window, document, jQuery );
