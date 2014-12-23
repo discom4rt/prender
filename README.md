@@ -5,8 +5,8 @@ Pre-render links as the mouse cursor approaches them.  The idea is to retrieve a
 
 ## Dependencies
  * [jQuery](http://jquery.com/)
- * [jQuery MouseMotion](https://github.com/discom4rt/jquery-mousemotion)
- * [getElementsOnPath](https://github.com/discom4rt/getElementsOnPath)
+ * [jQuery MouseMotion](https://github.com/mhgbrown/jquery-mousemotion)
+ * [getElementsOnPath](https://github.com/mhgbrown/getElementsOnPath)
 
 ## Example
 
